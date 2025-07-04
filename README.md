@@ -49,14 +49,10 @@
 
 ### 頁面預覽
 
-<!-- 將下列 image 替換為你自己的截圖路徑 -->
-| 首頁 Hero      | 精選輪播         | 部落格列表       |
-|:---------------:|:---------------:|:---------------:|
-| ![首頁](./screenshots/home.png) | ![輪播](./screenshots/carousel.png) | ![列表](./screenshots/blog-list.png) |
-
-| 文章詳情       | 分頁 & 收合功能  | 回到頂部 & 訂閱  |
-|:---------------:|:---------------:|:---------------:|
-| ![文章](./screenshots/article.png) | ![分頁](./screenshots/pagination.png) | ![訂閱](./screenshots/subscribe.png) |
+Mailchimp後台
+說明：indexl.html 頁面表單，有串接 Mailchimp
+![報表頁面]([https://github.com/WilliamHsieh615/HexSchoolWebsite/blob/main/data/mailchimp_text_data.csv](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/mailchimp_page.png))
+![後台頁面](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/mailchimp_text_data.png)
 
 ### 使用說明
 
