@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>掌握前端測試：從單元測試到端對端測試的完整攻略｜個人品牌網站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+</head>
+
+<body>
+
+    <div class="wrap" id="up">
+
+        <nav class="bar">
+            <a href="index.html" class="link_JS">首頁</a>
+            <a href="blog.html" class="link_JS">部落格</a>
+        </nav>
+
+        <section class="section_article unit-test"></section>
+
+        <main>
+            <div class="article_main">
+                <div class="preface" data-aos="zoom-in">
+                    <h3>前言</h3>
+                    <p>測試是前端開發中不可或缺的一環，能在程式部署到生產環境前發現問題、避免使用者遭遇錯誤。</p>
+                    <p>從最小粒度的單元測試，到模擬真實使用者互動的端對端測試，各有其應用場景與優勢。</p>
+                    <p>接下來，我們將依序介紹三大測試階段與實務建議，幫助你建立完善的測試流程。</p>
+                </div>
+                <div class="para" data-aos="zoom-in">
+                    <img src="../image/blog/photo12.png" alt="content1">
+                    <h3>三大測試階段與關鍵做法</h3>
+                    <div class="part">
+                        <h4>一、單元測試（Unit Testing）</h4>
+                        <p>為何重要</p>
+                        <p>單元測試聚焦在最小功能單位，能精準驗證函式、元件或工具函式的行為是否符合預期，快速定位問題來源。</p>
+                        <ul>建議做法：
+                            <li>建立測試檔案與程式檔案並行存放，命名要清晰易對應。</li>
+                            <li>針對各種輸入和邊界條件撰寫測試案例，確保各種情境下的輸出都正確。</li>
+                            <li>持續整合（CI）中自動執行單元測試，避免任何錯誤未經檢查即合併。</li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <h4>二、組件測試（Integration Testing）</h4>
+                        <p>為何重要</p>
+                        <p>組件測試關注多個元件或模組之間的互動，確認資料流與狀態管理在整體協作時不會出錯。</p>
+                        <ul>建議做法：
+                            <li>在測試環境中模擬狀態管理（如 Redux、Vuex）或 API 資料，確保組件在整合後仍能正常運作。</li>
+                            <li>為常見使用場景撰寫流程測試，例如登入流程、表單提交等，檢查 UI 更新與後端互動是否正確。</li>
+                            <li>使用虛擬 DOM 渲染與快照測試，驗證 UI 輸出無誤。</li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <h4>三、端對端測試（E2E Testing）</h4>
+                        <p>為何重要</p>
+                        <p>端對端測試從使用者角度出發，模擬真實瀏覽器操作，涵蓋完整流程，能捕捉到環境配置或組件整合層面才會出現的問題。</p>
+                        <ul>建議做法：
+                            <li>選擇合適框架（如 Cypress、Playwright），以真實瀏覽器模式執行測試。</li>
+                            <li>建立重要路徑的測試腳本，如用戶註冊、購物車結帳等，並在 CI/CD 部署流程中自動跑一遍。</li>
+                            <li>定期更新測試案例，隨著產品功能演進，一併維護測試腳本。</li>
+                        </ul>
+                    </div>
+                    <div class="annotation" data-aos="flip-up">小結：完整的測試策略應涵蓋單元、組件到端對端，並搭配持續整合自動化執行。透過這三大階段，你的前端專案將更穩健、錯誤率更低、維護成本也會大幅下降。</div>
+                </div>
+                <div class="extend">
+                    <h3>延伸閱讀</h3>
+                    <ul></ul>
+                </div>
+                <div class="changePage"></div>
+            </div>
+        </main>
+
+        <section class="section_link">
+            <a href="mailto:alysewang@hexschool.com" class="email" data-aos="fade-right">alysewang@hexschool.com</a>
+            <ul class="icon" data-aos="fade-left">
+                <li><a href="#"><img src="../image/index/youtube.png" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="../image/index/ podcasts.png" alt="podcasts icon"></a></li>
+                <li><a href="#"><img src="../image/index/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../image/index/linkedin.png" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="../image/index/instagram.png" alt="instagram icon"></a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Alyse Wang. All rights reserved.</p>
+            <a href="#up" class="bi bi-arrow-up-square up"></a>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/article.js"></script>
+    <script>
+        AOS.init({ duration: 1000, });
+    </script>
+
+</body>
+
+</html>

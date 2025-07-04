@@ -1,0 +1,87 @@
+.article_main {
+    max-width: 636px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin: 0 auto;
+
+    h3 {
+        color: $primary-color;
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .annotation {
+        background: #EDEDED;
+        border-radius: 24px;
+        padding: 24px;
+        font-weight: bold;
+    }
+
+    .preface,
+    .para,
+    .conclusion,
+    .extend {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .word {
+            color: $primary-color;
+        }
+    }
+
+    .para,
+    .extend {
+        ul li {
+            list-style-position: inside;
+            list-style-type: disc;
+        }
+
+        ol li {
+            list-style-position: inside;
+            list-style-type: decimal;
+        }
+    }
+
+    .para {
+
+        h4 {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        .part {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    .extend {
+        a {
+            color: $primary-color;
+        }
+    }
+
+    .changePage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            border: 1px solid $secondary-color;
+            border-radius: 40px;
+            padding: 8px 16px;
+
+            &:hover {
+                background: $secondary-color;
+                color: white;
+            }
+        }
+
+        .next{
+            margin-left: auto;
+        }
+    }
+}

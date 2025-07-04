@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React 入門不再迷惘：三步驟帶你上手核心概念｜個人品牌網站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+</head>
+
+<body>
+
+    <div class="wrap" id="up">
+
+        <nav class="bar">
+            <a href="index.html" class="link_JS">首頁</a>
+            <a href="blog.html" class="link_JS">部落格</a>
+        </nav>
+
+        <section class="section_article react-intro"></section>
+
+        <main>
+            <div class="article_main">
+                <div class="preface" data-aos="zoom-in">
+                    <h3>前言</h3>
+                    <p>React 是目前最熱門的前端函式庫之一，但新手常常因為 JSX、元件化思維與狀態管理而感到迷惘。</p>
+                    <p>本篇文章將用「三步驟」的方式，帶你從零開始，一步步掌握 React 的核心概念，快速上手並應用在真實專案中。</p>
+                </div>
+                <div class="para" data-aos="zoom-in">
+                    <img src="../image/blog/photo3.png" alt="content1">
+                    <h3>三步驟掌握 React 核心概念</h3>
+                    <div class="part">
+                        <h4>步驟一：理解 JSX 與元件化思維</h4>
+                        <p>為何重要</p>
+                        <p>JSX 讓你在 JavaScript 中直接撰寫類似 HTML 的語法，搭配元件化思維，可以把 UI 拆成更小、更可重用的區塊，提升專案維護性。</p>
+                        <ol>建議做法：
+                            <li>練習建立簡單函式元件：
+                                <pre><code>
+                                function Hello() {
+                                    return &lt;h1&gt;Hello, React!&lt;/h1&gt;;
+                                }
+                                </code></pre></li>
+                            <li>嘗試把頁面拆分成父子元件，並用 props 傳遞資料。</li>
+                            <li>參考官方文件 <span class="word">Quick Start</span>，深入理解其運作原理。</li>
+                        </ol>
+                    </div>
+                    <div class="part">
+                        <h4>步驟二：掌握 State 與 Props</h4>
+                        <p>為何重要</p>
+                        <p>Props 是父元件向子元件傳遞資料的唯一路徑，State 則是元件自身可變的狀態，兩者共同構成 React 的單向資料流機制。</p>
+                        <ol>建議做法：
+                            <li>在函式元件中使用 useState 管理狀態。</li>
+                            <li>配合事件處理函式，呼叫 setCount 更新 state，觀察畫面自動重新渲染效果。</li>
+                            <li>練習「狀態提升」（lifting state up），把多個元件共用的 state 抽離到共同父元件，實現「單一資料來源」。</li>
+                        </ol>
+                    </div>
+                    <div class="part">
+                        <h4>步驟三：深入理解 Hook 與副作用管理</h4>
+                        <p>為何重要</p>
+                        <p>自 React 16.8 起，Hook 讓函式元件也能使用生命週期方法與副作用管理，useEffect 是最常用的 Hook，能在元件渲染後執行資料抓取、訂閱、或清除操作。</p>
+                        <ol>建議做法：
+                            <li>用 useEffect 執行 API 請求：
+                                <pre><code>
+                                useEffect(() => {
+                                    fetch("/api/posts")
+                                        .then((res) => res.json())
+                                        .then((data) => setPosts(data));
+                                }, []);
+                                </code></pre></li>
+                            <li>理解依賴陣列（dependency array）的意義，決定副作用執行時機。</li>
+                            <li>嘗試其他 Hook：useContext 管理全域狀態、useReducer 處理複雜邏輯、useMemo／useCallback 優化效能。</li>
+                        </ol>
+                    </div>
+                    <div class="annotation" data-aos="flip-up">小結：先掌握 JSX 與元件拆分，再理解 State 與 Props，最後活用 Hook 管理副作用，你就能打下穩固的 React 基礎，在專案中自由組合元件，應對各種互動需求。</div>
+                </div>
+                <div class="extend">
+                    <h3>延伸閱讀</h3>
+                    <ul></ul>
+                </div>
+                <div class="changePage"></div>
+            </div>
+        </main>
+
+        <section class="section_link">
+            <a href="mailto:alysewang@hexschool.com" class="email" data-aos="fade-right">alysewang@hexschool.com</a>
+            <ul class="icon" data-aos="fade-left">
+                <li><a href="#"><img src="../image/index/youtube.png" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="../image/index/ podcasts.png" alt="podcasts icon"></a></li>
+                <li><a href="#"><img src="../image/index/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../image/index/linkedin.png" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="../image/index/instagram.png" alt="instagram icon"></a></li>
+            </ul>
+        </section>
+        
+        <footer class="footer">
+            <p>© 2025 Alyse Wang. All rights reserved.</p>
+            <a href="#up" class="bi bi-arrow-up-square up"></a>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/article.js"></script>
+    <script>
+        AOS.init({ duration: 1000, });
+    </script>
+
+</body>
+
+</html>

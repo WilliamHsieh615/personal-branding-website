@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 魔法大揭密：排版與設計的三大關鍵技巧｜個人品牌網站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+</head>
+
+<body>
+
+    <div class="wrap" id="up">
+
+        <nav class="bar">
+            <a href="index.html" class="link_JS">首頁</a>
+            <a href="blog.html" class="link_JS">部落格</a>
+        </nav>
+
+        <section class="section_article css-magic"></section>
+
+        <main>
+            <div class="article_main">
+                <div class="preface" data-aos="zoom-in">
+                    <h3>前言</h3>
+                    <p>CSS 不只是顏色、字體和排版，更是塑造使用者體驗的關鍵工具。掌握正確的排版與設計技巧，能讓你的網頁更加流暢、美觀，也更具可維護性。</p>
+                    <p>以下分享三大實戰技巧，幫助你在專案中快速落地。</p>
+                </div>
+                <div class="para" data-aos="zoom-in">
+                    <img src="../image/blog/photo5.png" alt="content1">
+                    <h3>三大關鍵技巧</h3>
+                    <div class="part">
+                        <h4>技巧一：統一基底 — CSS Reset 與自訂預設樣式</h4>
+                        <p>為何重要</p>
+                        <p>瀏覽器預設的 margin、padding 和版型各有差異，若不先重置，跨瀏覽器的差異會讓排版大亂。</p>
+                        <ul>建議做法：
+                            <li>在專案起手就導入 Normalize.css 或自訂 Reset 規則，重置常見元素的預設樣式。</li>
+                            <li>使用全域變數（CSS 變數）設定色彩、間距、字體等基底值，確保設計一致性。</li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <h4>技巧二：彈性排版 — 深入 Flexbox 與 Grid</h4>
+                        <p>為何重要</p>
+                        <p>Flexbox 擅長一維佈局（橫/縱向排列），Grid 則可實現複雜的二維網格，兩者結合能應對絕大部分排版需求。</p>
+                        <ul>建議做法：
+                            <li>練習常見佈局案例：水平/垂直置中、等寬欄位、動態換行卡片等。</li>
+                            <li>使用 Grid 的 grid-template-areas 和 minmax()，快速搭出彈性網格。</li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <h4>技巧三：響應式優化 — CSS 變數與媒體查詢</h4>
+                        <p>為何重要</p>
+                        <p>在各種裝置上都能維持良好排版，才能提供一致的使用者體驗。</p>
+                        <ul>建議做法：
+                            <li>將常用斷點定義為 CSS 變數（如 --bp-md: 768px），在 media query 中重複使用。</li>
+                            <li>利用 clamp()、min()、max() 實現 fluid typography 和 fluid spacing，減少過多的斷點判斷。</li>
+                        </ul>
+                    </div>
+                    <div class="annotation" data-aos="flip-up">小結：先從 Reset 和統一基底著手，再靈活運用 Flexbox/Grid 佈局，最後以變數與流體單位優化響應式，三步驟就能讓你的 CSS 排版與設計更上一層樓。</div>
+                </div>
+                <div class="extend">
+                    <h3>延伸閱讀</h3>
+                    <ul></ul>
+                </div>
+                <div class="changePage"></div>
+            </div>
+        </main>
+
+        <section class="section_link">
+            <a href="mailto:alysewang@hexschool.com" class="email" data-aos="fade-right">alysewang@hexschool.com</a>
+            <ul class="icon" data-aos="fade-left">
+                <li><a href="#"><img src="../image/index/youtube.png" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="../image/index/ podcasts.png" alt="podcasts icon"></a></li>
+                <li><a href="#"><img src="../image/index/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../image/index/linkedin.png" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="../image/index/instagram.png" alt="instagram icon"></a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Alyse Wang. All rights reserved.</p>
+            <a href="#up" class="bi bi-arrow-up-square up"></a>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/article.js"></script>
+    <script>
+        AOS.init({ duration: 1000, });
+    </script>
+
+</body>
+
+</html>

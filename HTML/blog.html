@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>部落格｜個人品牌網站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+
+</head>
+
+<body>
+
+    <div class="wrap" id="up">
+        <nav>
+            <a href="index.html" class="link_JS">首頁</a>
+            <a href="blog.html" class="link_JS">部落格</a>
+        </nav>
+        <header class="blog_header">
+            <div class="banner">
+                <img src="../image/index/banner1.png" alt="banner1" data-aos="fade-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                <div class="banner_right" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500">
+                    <div class="title">
+                        <h1>BLOG</h1>
+                        <p>前端工程師 & 職涯諮詢師</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="section_article blog-newest-article"></section>
+        <main class="blog_main">
+            <div class="search">
+                <a class="bi bi-search searchIcon" href="#"></a>
+                <input type="search" placeholder="搜尋你感興趣的文章" class="searchInput">
+            </div>
+            <div class="noResult" style="display:none; color:red; margin:50px 0; text-align: center; font-size: 30px;">查無符合的文章</div>
+            <ul class="container_essay essayContainerBlogJS"></ul>
+            <!-- <div id="pagination" class="pagination">
+            </div> -->
+        </main>
+        <section class="section_link">
+            <a href="mailto:alysewang@hexschool.com" class="email" data-aos="fade-right">alysewang@hexschool.com</a>
+            <ul class="icon" data-aos="fade-left">
+                <li><a href="#"><img src="../image/index/youtube.png" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="../image/index/ podcasts.png" alt="podcasts icon"></a></li>
+                <li><a href="#"><img src="../image/index/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../image/index/linkedin.png" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="../image/index/instagram.png" alt="instagram icon"></a></li>
+            </ul>
+        </section>
+        <footer>
+            <p>© 2025 Alyse Wang. All rights reserved.</p>
+            <a href="#up" class="bi bi-arrow-up-square up"></a>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/nav.js"></script>
+    <script>
+        AOS.init({ duration: 1000, });
+    </script>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,110 @@
+.section_article {
+    border-top: 1px solid #6C757D;
+    border-bottom: 1px solid #6C757D;
+}
+
+.blog_main {
+    .search {
+        max-width: 1320px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+
+        .searchInput {
+            width: 416px;
+            height: 56px;
+            font-size: 20px;
+            border: 1px solid $secondary-color;
+            border-radius: 40px;
+            padding: 16px 48px 16px 60px;
+        }
+
+        .searchIcon {
+            font-size: 24px;
+            color: $secondary-color;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+
+            &:hover {
+                font-size: 30px;
+            }
+        }
+    }
+
+    /* ----------------------------- */
+
+    .container_essay {
+        max-width: 1320px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        gap: 80px 12px;
+
+        .essay {
+            max-width: 416px;
+            background: #FBFBFB;
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .container_essay {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .container_essay {
+            gap: 32px;
+        }
+    }
+
+    /* ----------------------------- */
+
+    // .pagination {
+    //     width: 328px;
+    //     height: 56px;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     gap: 10px;
+    //     margin: 0 auto;
+    //     padding: 8px 20px;
+    //     line-height: 1.5;
+    //     background: #FFFFFF;
+    //     border-radius: 40px;
+
+    //     a {
+    //         padding: 6px 10px;
+    //         cursor: pointer;
+    //         color: $secondary-color;
+    //     }
+
+    //     a:hover {
+    //         background: #EAEAEA;
+    //     }
+
+    //     a.active {
+    //         color: $primary-color;
+    //     }
+
+    //     .arrow {
+    //         font-size: 24px;
+    //         color: $secondary-color;
+    //     }
+
+    //     .dots {
+    //         pointer-events: none;
+    //         color: $secondary-color;
+    //     }
+    // }
+}
+
+@media (max-width: 375px) {
+    .blog_main {
+        padding: 64px 12px;
+    }
+}

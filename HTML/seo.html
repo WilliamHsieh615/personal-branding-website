@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO 與前端最佳實踐：讓搜尋引擎看見你的網站｜個人品牌網站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/all.css">
+</head>
+
+<body>
+
+    <div class="wrap" id="up">
+
+        <nav class="bar">
+            <a href="index.html" class="link_JS">首頁</a>
+            <a href="blog.html" class="link_JS">部落格</a>
+        </nav>
+
+        <section class="section_article seo"></section>
+
+        <main>
+            <div class="article_main">
+                <div class="preface" data-aos="zoom-in">
+                    <h3>前言</h3>
+                    <p>SEO（搜尋引擎最佳化）不只是給搜尋機器看的技術活，也是提升使用者體驗的關鍵環節。</p>
+                    <p>前端工程師如果能在開發過程中同步考量 SEO，不僅能增加流量，也能讓使用者更快找到他們想要的內容。</p>
+                    <p>接下來從 HTML、CSS、JavaScript 三大面向，帶你掌握最實用的前端 SEO 技巧。</p>
+                </div>
+                <div class="para" data-aos="zoom-in">
+                    <img src="../image/blog/photo9.png" alt="content1">
+                    <h3>打好基礎：HTML、CSS、JavaScript</h3>
+                    <div class="part">
+                        <h4>HTML 與語意化</h4>
+                        <p>為何重要</p>
+                        <p>良好的 HTML 結構能幫助搜尋引擎理解頁面層次與內容重點，並同時提升可及性與結構化資料的運用。</p>
+                        <ul>建議做法：
+                            <li>嚴格遵循層級使用 <code>&lt;h1&gt;</code>～<code>&lt;h6&gt;</code>，且頁面唯一 <code>&lt;h1&gt;</code> 放文章主標題。</li>
+                            <li>使用 <code>&lt;article&gt;</code>、<code>&lt;section&gt;</code>、<code>&lt;nav&gt;</code>、<code>&lt;aside&gt;</code> 等語意化標籤，不濫用 <code>&lt;div&gt;</code>。</li>
+                            <li>圖片必須加上 alt 屬性，確保搜尋機器與讀屏軟體都能讀到。</li>
+                            <li>為重要區塊加入長尾關鍵字，並在第一個段落中自然出現一次主關鍵。</li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <h4>CSS 與效能最佳化</h4>
+                        <p>為何重要</p>
+                        <p>首屏渲染速度（FCP）是 SEO 排名指標之一，減少 CSS 體積與阻塞可以讓搜尋機器更快抓到可見內容。</p>
+                        <ul>建議做法：
+                            <li>將關鍵 CSS inline 至 <head>，其餘樣式放在 <link rel="preload"> 或 async 載入。</li>
+                            <li>使用 PurgeCSS、Tailwind 的 JIT 或其他 tree-shaking 工具，移除未使用的樣式。</li>
+                            <li>利用媒體屬性（media="print"、media="(max-width:…)）分流 CSS，避免不必要的阻塞。</li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <h4>JavaScript 與結構化資料</h4>
+                        <p>為何重要</p>
+                        <p>過度依賴客戶端渲染（CSR）會讓搜尋爬蟲無法即時取得內容。結構化資料（JSON-LD）能幫助搜尋引擎顯示豐富摘要（Rich Snippets），提高點擊率。</p>
+                        <ul>建議做法：
+                            <li>採用 SSR/SSG（例如 Nuxt、Next.js），確保原始 HTML 即含主要內容。</li>
+                            <li>在 <head> 中注入 JSON-LD 架構化資料，宣告 Article、BreadcrumbList、WebPage 等。</li>
+                            <li>優化初始 JS 載入，減少首次互動時間（TTI），讓爬蟲能快速抓取 DOM。</li>
+                        </ul>
+                    </div>
+                    <div class="annotation" data-aos="flip-up">小結：透過語意化 HTML、CSS 最佳化，以及 SSR + 架構化資料三大手法，你可以在搜尋引擎與使用者眼中都成為贏家。從前端起手，打造高能見度的網站！</div>
+                </div>
+                <div class="extend">
+                    <h3>延伸閱讀</h3>
+                    <ul></ul>
+                </div>
+                <div class="changePage"></div>
+            </div>
+        </main>
+
+        <section class="section_link">
+            <a href="mailto:alysewang@hexschool.com" class="email" data-aos="fade-right">alysewang@hexschool.com</a>
+            <ul class="icon" data-aos="fade-left">
+                <li><a href="#"><img src="../image/index/youtube.png" alt="youtube icon"></a></li>
+                <li><a href="#"><img src="../image/index/ podcasts.png" alt="podcasts icon"></a></li>
+                <li><a href="#"><img src="../image/index/facebook.png" alt="facebook icon"></a></li>
+                <li><a href="#"><img src="../image/index/linkedin.png" alt="linkedin icon"></a></li>
+                <li><a href="#"><img src="../image/index/instagram.png" alt="instagram icon"></a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 Alyse Wang. All rights reserved.</p>
+            <a href="#up" class="bi bi-arrow-up-square up"></a>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/common.js"></script>
+    <script src="../JS/article.js"></script>
+    <script>
+        AOS.init({ duration: 1000, });
+    </script>
+
+</body>
+
+</html>
