@@ -1,3 +1,4 @@
+![banner](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/ReadmeBanner.png)
 # 個人品牌網站 (Personal Branding Website)
 
 🔗 [專案連結](https://williamhsieh615.github.io/PersonalBrandingWebsite/)
