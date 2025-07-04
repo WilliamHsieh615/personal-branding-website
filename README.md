@@ -64,3 +64,15 @@
    ```bash
    git clone https://github.com/your‑username/PersonalBrandingWebsite.git
    cd PersonalBrandingWebsite
+2. **（可選）安裝依賴並編譯 SCSS**
+   ```bash
+   npm install
+   npm run build:css
+3. 以本機伺服器開啟
+   ```bash
+   npx http-server .
+   
+   或直接雙擊 index.html 開啟瀏覽器。
+4. 部署
+   - GitHub Pages：啟用 Pages，指向 gh-pages 分支或 docs/ 資料夾
+   - Netlify / Vercel：連結 GitHub repo，自動部署
