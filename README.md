@@ -21,7 +21,7 @@
 ### 核心功能
 
 1. **動態文章列表**  
-   - [essays.json]() 提供 newest、popular、normal 三種分類  
+   - [essays.json](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/essays.json) 提供 newest、popular、normal 三種分類  
    - JSON 內容驅動列表渲染、自動加上「最新文章／人氣文章」標籤  
    - 關鍵字即時搜尋／篩選  
 
