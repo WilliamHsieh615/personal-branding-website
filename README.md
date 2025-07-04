@@ -71,7 +71,7 @@
 3. 以本機伺服器開啟
    ```bash
    npx http-server .
-或直接雙擊 index.html 開啟瀏覽器
+     或直接雙擊 index.html 開啟瀏覽器
 4. 部署
    - GitHub Pages：啟用 Pages，指向 gh-pages 分支或 docs/ 資料夾
    - Netlify / Vercel：連結 GitHub repo，自動部署
