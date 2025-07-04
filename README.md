@@ -8,7 +8,7 @@
 ### 技術棧
 - **HTML5** + **SCSS**（使用變數、Flexbox／Grid）  
 - **JavaScript (ES6+)**  
-  - [Axios](https://github.com/axios/axios)（動態抓取 JSON）  
+  - [Axios](https://axios-http.com/zh/)（動態抓取 JSON）  
   - [Swiper.js](https://swiperjs.com/)（首頁輪播）  
   - [AOS](https://michalsnik.github.io/aos/)（滾動動畫）
   - [SweetAlert2](https://sweetalert2.github.io/)（美化彈出提示視窗） 
