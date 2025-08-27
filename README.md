@@ -1,7 +1,7 @@
-![banner](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/ReadmeBanner.png)
+![banner](https://github.com/WilliamHsieh615/personal-branding-website/blob/main/data/ReadmeBanner.png)
 # 個人品牌網站 (Personal Branding Website)
 
-🔗 [專案連結](https://williamhsieh615.github.io/PersonalBrandingWebsite/)
+🔗 [專案連結](https://williamhsieh615.github.io/personal-branding-website/)
 
 ### 專案簡介
 一個現代、響應式的個人品牌與作品展示網站，專為前端工程師兼職涯諮詢師打造。結合首頁特色輪播、部落格文章動態載入、深度文章頁面、郵件訂閱功能與回到頂部按鈕，完整展現個人專業服務與內容。
@@ -22,7 +22,7 @@
 ### 核心功能
 
 1. **動態文章列表**  
-   - [essays.json](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/essays.json) 提供 newest、popular、normal 三種分類  
+   - [essays.json](https://github.com/WilliamHsieh615/personal-branding-website/blob/main/data/essays.json) 提供 newest、popular、normal 三種分類  
    - JSON 內容驅動列表渲染、自動加上「最新文章／人氣文章」標籤  
    - 關鍵字即時搜尋／篩選  
 
@@ -52,8 +52,8 @@
 
 #### Mailchimp後台
 說明：indexl.html 頁面表單，有串接 Mailchimp
-![報表頁面](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/mailchimp_page.png)
-![後台頁面](https://github.com/WilliamHsieh615/PersonalBrandingWebsite/blob/main/data/mailchimp_text_data.png)
+![報表頁面](https://github.com/WilliamHsieh615/personal-branding-website/blob/main/data/mailchimp_page.png)
+![後台頁面](https://github.com/WilliamHsieh615/personal-branding-website/blob/main/data/mailchimp_text_data.png)
 
 ### 使用說明
 
